@@ -22,4 +22,8 @@ public class Utils {
 		}
 		return result;
 	}
+	
+	public static int ramdonNumber(int max) {
+		return (int) (Math.random()*max+0);
+	}
 }
