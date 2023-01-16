@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RepoClient>
+    <paquetesList>
+        <entry>
+            <key>1</key>
+            <value id="1">
+                <destinatario>Hola</destinatario>
+                <localidad>adio</localidad>
+                <peso>5</peso>
+            </value>
+        </entry>
+    </paquetesList>
+</RepoClient>
