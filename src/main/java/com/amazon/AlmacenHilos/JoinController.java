@@ -1,9 +1,17 @@
 package com.amazon.AlmacenHilos;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
+import com.amazon.AlmacenHilos.Model.Paquete;
 import com.amazon.AlmacenHilos.Thread.Join;
 
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
@@ -20,6 +28,10 @@ public class JoinController {
 	private TextField mrw;
 	@FXML
 	private TableView<String> console;
+	@FXML
+	private TableColumn<String, String> imprimir;
+	
+	private ArrayList<String> consola;
 	
 	@FXML
 	private void startButton(ActionEvent event) throws IOException {
@@ -47,11 +59,28 @@ public class JoinController {
 				// TODO: handle exception
         		e.printStackTrace();
 			}
+        	
+        	//updateTable();
 		} catch (Exception e) {
 			// TODO: handle exception	
 		}
     }
 	
+	/*
+	@FXML
+	private void updateTable() {
+		ObservableList<String> oList = FXCollections.observableArrayList(this.consola);
+		Join j = new Join();
+		
+		imprimir.setCellValueFactory(Paquete -> {
+			SimpleStringProperty a = new SimpleStringProperty();
+			a.setValue(j.getMensajes());
+			return a;
+		});
+		console.getItems().clear();
+		console.getItems().addAll(oList);
+	}
+	*/
     @FXML
     private void switchToSearch() throws IOException {
         App.setRoot("search");
