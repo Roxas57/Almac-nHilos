@@ -35,10 +35,10 @@
             <Button layoutX="199.0" layoutY="234.0" mnemonicParsing="false" text="Button" />
             <TableView fx:id="console" layoutX="21.0" layoutY="147.0" prefHeight="190.0" prefWidth="408.0">
               <columns>
-                <TableColumn prefWidth="407.199987411499" />
+                <TableColumn fx:id="imprimir" prefWidth="407.199987411499" />
               </columns>
             </TableView>
-            <Button layoutX="175.0" layoutY="346.0" mnemonicParsing="false" onAction="#startButton" prefHeight="60.0" prefWidth="98.0" text="Button" />
+            <Button layoutX="175.0" layoutY="346.0" mnemonicParsing="false" onAction="#startButton" prefHeight="60.0" prefWidth="98.0" text="Iniciar" />
          </children></AnchorPane>
    </center>
    <left>
