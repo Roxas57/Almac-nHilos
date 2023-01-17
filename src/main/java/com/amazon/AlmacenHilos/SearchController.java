@@ -134,5 +134,18 @@ public class SearchController implements Initializable {
 		Almacen.addPaquete(new Paquete(6, "Madrid", "", 1));
 	}
 	
+	 @FXML
+	    private void switchToJoin() throws IOException {
+	        App.setRoot("search");
+	    }
+	    @FXML
+	    private void switchToSynchronize() throws IOException {
+	        App.setRoot("synchronize");
+	    }
+	    @FXML
+	    private void switchToShareResources() throws IOException {
+	        App.setRoot("shareresources");
+	    }
+	
    
 }

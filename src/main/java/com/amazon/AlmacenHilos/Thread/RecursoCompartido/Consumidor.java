@@ -4,24 +4,28 @@ import com.amazon.AlmacenHilos.Controller.Almacen;
 import com.amazon.AlmacenHilos.Controller.Utils;
 import com.amazon.AlmacenHilos.Model.Paquete;
 
-public class Consumidor implements Runnable {
+public class Consumidor extends Thread  {
 
 	private RCompartido rc;
 	
-	public Consumidor(RCompartido c) {
+	private int n;
+	
+	public Consumidor(RCompartido c,int n) {
 		this.rc=c;
+		this.n=n;
 	}
 	
 	@Override
 	public void run() {
-		while (true) {
+		int i=0;
+		while (i<n) {
 			try {
-				Thread.sleep(1000);
 				int id = Utils.ramdonNumber(rc.getPaquetes().size());
 				rc.consumidor(new Paquete(id, null, null, 0));
 			} catch (InterruptedException e) {
 				return;
 			}catch (Exception e) {}
+			i++;
 		}
 	}
 

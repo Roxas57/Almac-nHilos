@@ -1,25 +1,29 @@
 package com.amazon.AlmacenHilos.Thread.RecursoCompartido;
 
+import com.amazon.AlmacenHilos.Controller.Utils;
 import com.amazon.AlmacenHilos.Model.Paquete;
 
-public class Productor implements Runnable {
+public class Productor extends Thread {
 	private RCompartido rc;
-	private Paquete paquete;
+	private int n;
 	
-	public Productor(RCompartido c, Paquete paquete) {
+	public Productor(RCompartido c, int n) {
 		this.rc=c;
-		this.paquete=paquete;
+		this.n=n;
+		
 	}
-	
+
+
 	@Override
 	public void run() {
-		while (true) {
+		int i=0;
+		while (i<n) {
 			try {
-				Thread.sleep(1000);
-				rc.productor(paquete);
+				rc.productor(Utils.ramdonPaquete(rc.getPaquetes()));
 			} catch (InterruptedException e) {
 				return;
 			}catch (Exception e) {}
+			i++;
 		}
 	}
 }

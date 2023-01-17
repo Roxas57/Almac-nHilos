@@ -2,11 +2,187 @@
 <RepoClient>
     <paquetesList>
         <entry>
+            <key>0</key>
+            <value id="0">
+                <destinatario>Alex</destinatario>
+                <localidad>valencia</localidad>
+                <peso>27</peso>
+            </value>
+        </entry>
+        <entry>
             <key>1</key>
             <value id="1">
-                <destinatario>Hola</destinatario>
-                <localidad>adio</localidad>
-                <peso>5</peso>
+                <destinatario>Alfonso</destinatario>
+                <localidad>Cordoba</localidad>
+                <peso>40</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>2</key>
+            <value id="2">
+                <destinatario>Isabel</destinatario>
+                <localidad>Madrid</localidad>
+                <peso>40</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>3</key>
+            <value id="3">
+                <destinatario>Alex</destinatario>
+                <localidad>Cordoba</localidad>
+                <peso>11</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>4</key>
+            <value id="4">
+                <destinatario>Juanma</destinatario>
+                <localidad>Madrid</localidad>
+                <peso>15</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>5</key>
+            <value id="5">
+                <destinatario>Alfonso</destinatario>
+                <localidad>Cordoba</localidad>
+                <peso>18</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>6</key>
+            <value id="6">
+                <destinatario>Alex</destinatario>
+                <localidad>Sevilla</localidad>
+                <peso>27</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>7</key>
+            <value id="7">
+                <destinatario>Alfonso</destinatario>
+                <localidad>valencia</localidad>
+                <peso>45</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>8</key>
+            <value id="8">
+                <destinatario>Juanma</destinatario>
+                <localidad>Madrid</localidad>
+                <peso>20</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>9</key>
+            <value id="9">
+                <destinatario>Alex</destinatario>
+                <localidad>Barcelona</localidad>
+                <peso>44</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>10</key>
+            <value id="10">
+                <destinatario>Alex</destinatario>
+                <localidad>Madrid</localidad>
+                <peso>13</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>11</key>
+            <value id="11">
+                <destinatario>Juanma</destinatario>
+                <localidad>valencia</localidad>
+                <peso>47</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>12</key>
+            <value id="12">
+                <destinatario>Isabel</destinatario>
+                <localidad>valencia</localidad>
+                <peso>7</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>13</key>
+            <value id="13">
+                <destinatario>Alex</destinatario>
+                <localidad>Sevilla</localidad>
+                <peso>24</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>15</key>
+            <value id="15">
+                <destinatario>Pedro</destinatario>
+                <localidad>Cordoba</localidad>
+                <peso>21</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>16</key>
+            <value id="16">
+                <destinatario>Alfonso</destinatario>
+                <localidad>valencia</localidad>
+                <peso>23</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>17</key>
+            <value id="17">
+                <destinatario>Isabel</destinatario>
+                <localidad>Barcelona</localidad>
+                <peso>34</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>18</key>
+            <value id="18">
+                <destinatario>Juanma</destinatario>
+                <localidad>Cordoba</localidad>
+                <peso>15</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>19</key>
+            <value id="19">
+                <destinatario>Alex</destinatario>
+                <localidad>valencia</localidad>
+                <peso>41</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>20</key>
+            <value id="20">
+                <destinatario>Pedro</destinatario>
+                <localidad>Cordoba</localidad>
+                <peso>27</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>21</key>
+            <value id="21">
+                <destinatario>Alfonso</destinatario>
+                <localidad>Cordoba</localidad>
+                <peso>9</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>23</key>
+            <value id="23">
+                <destinatario>Pedro</destinatario>
+                <localidad>Cordoba</localidad>
+                <peso>25</peso>
+            </value>
+        </entry>
+        <entry>
+            <key>25</key>
+            <value id="25">
+                <destinatario>Juanma</destinatario>
+                <localidad>Sevilla</localidad>
+                <peso>27</peso>
             </value>
         </entry>
     </paquetesList>
