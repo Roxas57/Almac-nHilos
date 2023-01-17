@@ -15,9 +15,11 @@ public class RCompartido {
 	public HashMap<Integer, Paquete> getPaquetes() {
 		return rp.getPaquetesList();
 	}
+	public void loadPaquetes() {
+		rp.loadFile("Paquetes.xml");
+	}
 	
 	public synchronized void productor(Paquete paquete) throws InterruptedException {
-		System.out.println(paquete);
 		while (!disponible) {
 			wait();
 		}
@@ -25,6 +27,7 @@ public class RCompartido {
 		rp.addPaquete(paquete);
 		rp.saveFile("Paquetes.xml");
 		disponible = false;
+		System.out.println("creando " + paquete);
 		notifyAll();
 	}
 	
@@ -36,6 +39,7 @@ public class RCompartido {
 		rp.removePaquete(paquete.getId());
 		rp.saveFile("paquetes.xml");
 		disponible = true;
+		System.out.println("eliminando paquete con  id: " + paquete.getId());
 		notifyAll();
 	}
 }
