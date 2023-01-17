@@ -39,11 +39,27 @@ public class JoinController {
         	String sCorreos = correos.getText();
         	String sSeur = seur.getText();
         	String sMrw = mrw.getText();
-      
-        	int nCorreos = Integer.parseInt(sCorreos);
-        	int nSeur = Integer.parseInt(sSeur);
-        	int nMrw = Integer.parseInt(sMrw);
         	
+        	int nCorreos;
+        	int nSeur;
+        	int nMrw;
+        	
+        	if (correos.getText()=="") {
+        		nCorreos = 0;
+        	} else {
+        		nCorreos = Integer.parseInt(sCorreos);
+        	}
+        	if (seur.getText()=="") {
+        		nSeur = 0;
+        	} else {
+        		nSeur = Integer.parseInt(sSeur);
+        	}
+        	if (mrw.getText()=="") {
+        		nMrw = 0;
+        	} else {
+        		nMrw = Integer.parseInt(sMrw);
+        	}
+        	    	
         	Join hilocorreos = new Join(nCorreos,"Correos");
         	Join hiloseur = new Join(nSeur,"SEUR");
         	Join hilomrw = new Join(nMrw,"MRW");
@@ -60,27 +76,14 @@ public class JoinController {
         		e.printStackTrace();
 			}
         	
+        	System.out.println("--------------------------");
+        	
         	//updateTable();
 		} catch (Exception e) {
 			// TODO: handle exception	
 		}
     }
 	
-	/*
-	@FXML
-	private void updateTable() {
-		ObservableList<String> oList = FXCollections.observableArrayList(this.consola);
-		Join j = new Join();
-		
-		imprimir.setCellValueFactory(Paquete -> {
-			SimpleStringProperty a = new SimpleStringProperty();
-			a.setValue(j.getMensajes());
-			return a;
-		});
-		console.getItems().clear();
-		console.getItems().addAll(oList);
-	}
-	*/
     @FXML
     private void switchToSearch() throws IOException {
         App.setRoot("search");
