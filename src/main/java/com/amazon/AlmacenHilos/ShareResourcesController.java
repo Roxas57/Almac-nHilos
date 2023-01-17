@@ -102,6 +102,19 @@ public class ShareResourcesController implements Initializable {
 	
 	}
 	
+	@FXML
+    private void switchToJoin() throws IOException {
+        App.setRoot("join");
+    }
+	@FXML
+    private void switchToSearch() throws IOException {
+        App.setRoot("search");
+    }
+    @FXML
+    private void switchToSynchronize() throws IOException {
+        App.setRoot("synchronize");
+    }
+	
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
