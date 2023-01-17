@@ -12,19 +12,21 @@
    <center>
       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="199.0" layoutY="349.0" mnemonicParsing="false" onAction="#startButton" text="Button" />
-            <Label layoutX="44.0" layoutY="59.0" prefHeight="42.0" prefWidth="114.0" text="Correos">
+            <Button layoutX="184.0" layoutY="321.0" mnemonicParsing="false" onAction="#startButton" prefHeight="56.0" prefWidth="81.0" text="Iniciar" />
+            <Label alignment="CENTER" layoutX="167.0" layoutY="51.0" prefHeight="42.0" prefWidth="114.0" text="Correos">
                <font>
                   <Font size="26.0" />
                </font>
             </Label>
-            <Label layoutX="44.0" layoutY="164.0" prefHeight="42.0" prefWidth="114.0" text="SEUR">
+            <Label alignment="CENTER" layoutX="167.0" layoutY="167.0" prefHeight="42.0" prefWidth="114.0" text="SEUR" textAlignment="CENTER">
                <font>
                   <Font size="26.0" />
                </font>
             </Label>
-            <TextField fx:id="correos" layoutX="251.0" layoutY="67.0" prefHeight="26.0" prefWidth="154.0" promptText="Insertar Numero" />
-            <TextField fx:id="seur" layoutX="251.0" layoutY="172.0" prefHeight="26.0" prefWidth="154.0" promptText="Insertar Numero" />
+            <TextField fx:id="correos1" layoutX="24.0" layoutY="114.0" prefHeight="26.0" prefWidth="170.0" promptText="Insertar Paquetes Entregados" />
+            <TextField fx:id="seur2" layoutX="251.0" layoutY="241.0" prefHeight="26.0" prefWidth="169.0" promptText="Insertar Paquetes Recogidos" />
+            <TextField fx:id="seur1" layoutX="24.0" layoutY="241.0" prefHeight="26.0" prefWidth="169.0" promptText="Insertar Paquetes Entregados" />
+            <TextField fx:id="correos2" layoutX="250.0" layoutY="114.0" prefHeight="26.0" prefWidth="170.0" promptText="Insertar Paquetes Recogidos" />
          </children></AnchorPane>
    </center>
    <left>

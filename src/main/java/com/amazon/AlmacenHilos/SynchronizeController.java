@@ -15,26 +15,42 @@ import javafx.scene.control.TextField;
 public class SynchronizeController {
 	
 	@FXML
-	private TextField correos;
+	private TextField correos1;
 	
 	@FXML
-	private TextField seur;
+	private TextField correos2;
+	
+	@FXML
+	private TextField seur1;
+	
+	@FXML
+	private TextField seur2;
 	
 	@FXML
 	private void startButton(ActionEvent event) throws IOException {
-		String sCorreos = correos.getText();
-		int nCorreos = Integer.parseInt(sCorreos);
+		String sCorreos1 = correos1.getText();
+		int nCorreos1 = Integer.parseInt(sCorreos1);
 		
-		String sSeur = seur.getText();
-		int nSeur = Integer.parseInt(sSeur);
+		String sCorreos2 = correos2.getText();
+		int nCorreos2 = Integer.parseInt(sCorreos2);
+		
+		String sSeur1 = seur1.getText();
+		int nSeur1 = Integer.parseInt(sSeur1);
+		
+		String sSeur2 = seur2.getText();
+		int nSeur2 = Integer.parseInt(sSeur2);
 		
 		Almacen almacen = new Almacen(100);
-		IngresarPaquetes correos = new IngresarPaquetes(almacen, "Correos", nCorreos);
+		IngresarPaquetes correos1 = new IngresarPaquetes(almacen, "Correos", nCorreos1);
+		SacarPaquetes correos2 = new SacarPaquetes(almacen, "Correos", nCorreos2);
 		
-		SacarPaquetes seur = new SacarPaquetes(almacen, "SEUR", nSeur);
+		IngresarPaquetes seur1 = new IngresarPaquetes(almacen, "SEUR", nSeur1);
+		SacarPaquetes seur2 = new SacarPaquetes(almacen, "SEUR", nSeur2);
 		
-		correos.start();
-		seur.start();
+		correos1.start();
+		seur1.start();
+		correos2.start();
+		seur2.start();
 		
 	}
 	
